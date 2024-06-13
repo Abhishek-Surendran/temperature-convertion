@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-lg">
+        <div class="d-flex align-items-center justify-content-center vh-100">
+            <div class="text-center border border-info border-5 rounded w-75">
+                <header class="p-3 m-3 bg-info-subtle bg-opacity-10 border border-info border-1 rounded">
+                    <h1>Temperature Converter</h1>
+                </header>
+
+                <main class="p-3 m-3 bg-info-subtle bg-opacity-10 border border-info border-1 rounded">
+                    <form id="converter-form">
+
+                        <div class="p-2 m-2">
+                            <label for="inputTemp" class="form-label">Enter Temperature:</label>
+                            <input type="number" id="inputTemp" name="inputTemp" value="0" class="form-control text-center" required>
+                        </div>
+
+                        <div class="p-2 m-2">
+                            <label for="inputUnit" class="form-label">From:</label>
+                        <select id="inputUnit" name="inputUnit" class="form-control text-center">
+                            <option value="" disabled selected hidden>Select a temperature scale</option>
+                            <option value="Celsius">Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                        </div>
+
+                        <div class="p-2 m-2">
+                            <label for="outputUnit" class="form-label">To:</label>
+                        <select id="outputUnit" name="outputUnit"  class="form-control text-center">
+                            <option value="" disabled selected hidden>Select a temperature scale</option>
+                            <option value="Celsius">Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                        </div>
+
+                        <div class="p-2 m-2">
+                            <button type="button" id="convertButton" class="btn btn-primary">Convert</button>
+                        </div>
+
+                    </form>
+                    <p id="result"></p>
+                </main>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Program Code -->
+    <script src="script.js"></script>
+</body>
+
+</html>
